@@ -1,0 +1,84 @@
+
+.get{
+    display: flex;
+    max-width: 60rem;
+    
+    height: 40rem;
+    margin-inline: auto;
+    border: 2px solid purple;
+    border-radius: 5px;
+    @include wind-width(1200px)
+    {
+        margin-inline: 1rem;
+    }
+    
+    .get-item1,.get-item2{
+        flex: 1;
+        
+    }
+    .get-item1{
+        @include wind-width(500px)
+        {
+            display: none;
+        }
+       color:white;
+       background-color: rgb(232, 95, 232);
+       padding:1rem;
+       p{
+        text-align: justify;
+       }
+       ul{
+        padding: 0;
+        margin: 0;
+       }
+       ul li{
+        list-style:none;
+        
+       }
+        li::before{
+        content: "→";
+        margin-right: 5px;
+       } 
+       
+    }
+   .get-item2{
+   
+    padding:1rem;
+    label{
+        margin-bottom: 1rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        box-shadow:0 -5px 5px 0 gray,0 -5px 5px 0 gray;
+    }
+    textarea{
+        padding: 0.5rem;
+        box-shadow:0 -5px 5px 0 gray,0 -5px 5px 0 gray;
+    }
+    .message{
+        height: 5rem;
+    }
+    .sbmt{
+        width: 6rem;
+        height: 3rem;
+        border-radius: 5px;
+        background-color: white;
+        text-align: center;
+        margin-top: 1rem;
+        box-shadow:0 -2px 5px 0 gray,0 -2px 5px 0 gray;
+    }
+    .sbmt:hover{
+        background-color: purple;
+        color: white;
+    }
+
+    
+   }
+  
+   
+}

@@ -1,0 +1,61 @@
+@import '_base';
+
+img{
+    display:block;
+max-width:100%;
+height:auto;
+}
+.comp-head{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 2rem;
+   
+   
+}
+.amzn{
+    padding: 0.5rem;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 40rem;
+    margin-inline: auto;
+}
+.card{
+    width: 5rem;
+    height: 5rem;
+    margin: 0.5rem;
+    box-shadow: 0 0 5px gray;
+}
+.card:hover{
+    transform:rotateZ(360deg) scale(1.2);
+    transition: 0.3s;
+    box-shadow: 0 0 8px black;
+}
+.line{
+    height: 0.1rem;
+    background-color: purple;
+    max-width: 20rem;
+    margin-inline: auto;
+   @include wind-width(400px)
+    {
+        width: 10rem;
+    }
+}
+.line::after{
+    content: "";
+    max-width: 4rem;
+    
+    height: 0.3rem;
+    background-color: purple;
+    display: block;
+    transform: translateY(0.1rem);
+    margin-inline: auto;
+    @include wind-width(400px)
+    {
+        width: 2rem;
+    }
+   
+}

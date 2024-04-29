@@ -1,0 +1,96 @@
+/* img{
+    display:block;
+max-width:100%;
+height:auto;
+} */
+
+.txt-below-work{
+    text-align: center;
+    color: rgb(133, 133, 133);
+    margin-top: 1rem;
+    @include wind-width(400px)
+    {
+        margin-inline: 0.7rem;
+       text-align: justify;
+    }
+    
+        @include wind-width(600px)
+        {
+            margin-inline: 2.2rem;
+           text-align: justify;
+        }
+    
+}
+.projects{
+    margin-top: 3rem;
+    .btn-grp{
+        display: flex;
+        justify-content: center;
+        @include wind-width(500px)
+    {
+        margin-inline: 0.7rem;
+       
+    }
+       button{
+        background-color: white;
+        border: 2px solid purple;
+        margin-inline: 0.5rem;
+        padding: 0.2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 3px gray;
+       }
+       button:hover{
+        background-color: purple;
+        color: white;
+        transform: scale(1.2);
+        transition: 0.3s;
+       }
+       .pro-btn{
+        width: 2.5rem;
+       }
+    }
+    .project-cards{
+        max-width: 60rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-inline: auto;
+    }
+    .project-card{
+        height: 15rem;
+        width: 18rem;
+        margin: 1rem;
+        border-top: 5px solid purple;
+        position: relative;
+        overflow: hidden;
+        
+        .over-img{
+            height: 12.5rem;
+            width: 100%;
+            background-color: rgba(128, 0, 128, 0.413);
+            position:absolute;
+            top: 0;
+            color: white;
+            text-align: center;
+            padding-top: 4rem;
+            display: none;
+        }
+          
+    }
+    .project-card:hover{
+        
+        img{
+            transform: scale(1.1);
+            transition: 0.3s;
+            max-height: 100%;
+            max-width: 100%;
+        }
+        .over-img{
+            display: block;
+            
+            
+       }
+    }
+   
+}

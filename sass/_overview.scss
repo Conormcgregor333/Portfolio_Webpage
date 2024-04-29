@@ -1,0 +1,41 @@
+.overview{
+   
+    h1{
+        margin-top: 1rem;
+        text-align: center;
+       
+    }
+    .col h2{
+        @include wind-width(500px)
+        {
+            margin-inline: 0.7rem;
+           text-align: justify;
+        }
+    }
+    .col{
+        margin-top:2rem;
+        margin-inline: auto;
+        max-width: 35rem;
+        columns: 2 15rem;
+        column-rule: 1px solid gray;
+        text-align: center;
+        p{
+            text-align: justify;
+        }
+        @include wind-width(580px)
+        {
+            .col{
+                display: flex;
+                flex-direction: column;
+                
+                
+            }
+            h1{
+                margin: 1rem;
+            }
+            p{
+                margin: 1rem;
+            }
+        }
+    }
+}

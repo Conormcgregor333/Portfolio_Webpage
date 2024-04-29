@@ -1,0 +1,27 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+img{
+    display:block;
+max-width:100%;
+height:auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin wind-width($width)
+{
+    @media screen and (max-width:$width){
+        @content
+    }
+};
+@mixin min-width($width)
+{
+    @media screen and (min-width:$width){
+        @content
+    }
+}
+.head{
+    text-align: center;
+    margin: 2rem;
+}

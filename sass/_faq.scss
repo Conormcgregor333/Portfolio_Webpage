@@ -1,0 +1,27 @@
+@import '_base';
+
+.accordion{
+    margin-top: 8rem;
+    @include wind-width(1350px)
+    {
+       margin-top: 3rem;
+    }
+   
+    max-width: 50rem;
+    margin-inline: auto;
+    .item{
+        margin-top: 2rem;
+        border: rgb(204, 87, 204) 3px solid ;
+        border-radius: 7px;
+        box-shadow: 0 0 5px black;
+        .acc-btn{
+            border-radius: 7px;
+        }
+        @include wind-width(900px)
+        {
+            margin-inline: 1rem;
+        }
+    }
+    
+   
+}
