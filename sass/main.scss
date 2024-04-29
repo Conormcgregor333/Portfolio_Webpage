@@ -7,6 +7,9 @@
 @import '_work_section';
 @import '_getting_started';
 @import '_footer';
+body{
+  background-color: white;  
+}
 .btn-contact{
     border-radius: 2rem;
     display: flex;

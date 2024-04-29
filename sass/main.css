@@ -60391,6 +60391,10 @@ footer {
   right: 1rem;
 }
 
+body {
+  background-color: white;
+}
+
 .btn-contact {
   border-radius: 2rem;
   display: flex;
