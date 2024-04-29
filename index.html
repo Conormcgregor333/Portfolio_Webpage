@@ -39,7 +39,7 @@
         <p>
           This is a portfolio web-page .I love to learn about technologies and explore the realm of it.
         </p>
-       <a href="https://www.linkedin.com/in/siddharth-pareek-75514b190/" target="_blank"><button><p class="contact">Get in touch</p><img class="call" src="/images-folder/arrow.png" alt=""></button></a>
+       <a href="https://www.linkedin.com/in/siddharth-pareek-75514b190/" target="_blank"><button ><p class="contact">Get in touch</p><img class="call" src="/images-folder/arrow.png" alt=""></button></a>
        </div>
        <div >
         <img class="intro-img" src="/images-folder/intro-pic.svg" alt="hero-image" >
@@ -246,18 +246,18 @@
         <div class="get-item2">
           <h2>Start Now</h2>
          <div class="form">
-          <form action="">
-            <label for="firstName">First Name</label>
-            <input type="text">
-            <label for="lsstName">Last Name</label>
-            <input type="text">
-            <label for="email">Email</label>
-            <input type="email" placeholder="abc@gmail.com">
-            <label for="message">Your message to us</label>
-            <textarea  name="" id="" cols="30" rows="5"></textarea>
-            
+          <form action="https://formbold.com/s/9XqvB" method="POST" id="myForm">
+            <label for="firstName" id="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" required>
+            <label for="lastName" id="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName">
+            <label for="email" id="email">Email</label>
+            <input type="email" placeholder="abc@gmail.com" name="email" id="email">
+            <label for="message" id="message">Your message to us</label>
+            <textarea  name="message" id="message"  cols="30" rows="5"></textarea>
+            <button class="sbmt" type="submit" id="sbmt">Submit</button>
           </form>
-          <button class="sbmt" type="submit">Submit</button>
+          
          </div>
         </div>
       </div>
@@ -365,7 +365,7 @@
           
       });
       </script>
-      
+      <script src="scriptForbtn.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
