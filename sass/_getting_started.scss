@@ -55,10 +55,18 @@
         margin-bottom: 1rem;
         padding: 0.5rem;
         box-shadow:0 -5px 5px 0 gray,0 -5px 5px 0 gray;
+       @include wind-width(320px)
+       {
+        width:90%;
+       }
     }
     textarea{
         padding: 0.5rem;
         box-shadow:0 -5px 5px 0 gray,0 -5px 5px 0 gray;
+        @include wind-width(320px)
+        {
+         width:90%;
+        }
     }
     .message{
         height: 5rem;
